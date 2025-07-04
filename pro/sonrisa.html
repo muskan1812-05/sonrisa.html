@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONRISA - Clothing Brand</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #dcb389;
+      line-height: 1.6;
+    }
+    
+    #Container {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    header {
+      display: flex;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 10.4%;
+     background-color: #9a6a30;
+      padding: 10px 5%;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+    }
+    
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: clamp(18px, 4vw, 24px);
+      letter-spacing: 1px;
+    }
+    
+    nav {
+      display: flex;
+    }
+    
+    nav a {
+      color: black;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: clamp(14px, 2vw, 16px);
+      white-space: nowrap;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+    
+    .home img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom:10px;
+    }
+    
+    .home h2 {
+      font-size: clamp(24px, 5vw, 32px);
+      margin-bottom: 100px;
+    }
+    
+    .home p {
+      font-size: clamp(16px, 3vw, 20px);
+      font-style: italic;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 100%;
+      padding: 50px 5%;
+    }
+    
+    .menu a {
+      text-decoration: none;
+      background-color: #9a6a30;
+      padding: 8px 15px;
+      color: black;
+      border-radius: 30px;
+      text-align: center;
+      font-size: clamp(12px, 2vw, 14px);
+      transition: background-color 0.3s;
+    }
+    
+    .menu a:hover {
+      background-color: #7a5224;
+    }
+    
+    .shop {
+      margin-top: 80px;
+      padding: 20px 5%;
+    }
+    
+    .con {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    .category {
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    
+    .category:hover {
+      transform: translateY(-5px);
+    }
+    
+    .category img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .category h3 {
+      font-size: 18px;
+    }
+    
+    footer {
+      background-color: #9a6a30;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: clamp(14px, 2vw, 16px);
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px;
+      }
+      
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      nav a {
+        margin: 5px;
+      }
+      
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .menu a {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+      
+      .con {
+        grid-template-columns: 1fr;
+      }
+      
+      .category img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="social-icons">
+      <a href="https://www.email.com"><img src="https://i.pinimg.com/originals/58/ff/c8/58ffc8567b1a2fa817e34d7014005982.jpg" alt="Email"></a>
+      <a href="https://www.instagram.com/the_sonrisa_collection?igsh=MWp5M3dtcXI1YmxyZQ=="><img src="https://i.pinimg.com/736x/42/d1/0a/42d10ab9f26ab0bf57fa15586a58d540.jpg" alt="Instagram"></a>
+      <a href="tel:+917888601752"><img src="https://i.pinimg.com/736x/68/8c/d4/688cd441be92e13c87fcedb5c06e5bbd.jpg" alt="Phone"></a>
+    </div>
+    
+    <nav>
+      <a href="sonrisa.html">Home</a>
+      <a href="#categories">Shop</a>
+      <a href="about us .html">About Us</a>
+      <a href="contact us.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home1">  
+      <div>
+        <img src="https://i.pinimg.com/736x/a9/86/7b/a9867b0b0173f0e4455cc0b74a217008.jpg" alt="Sonrisa Collection">
+        <p><i>Elegance in every thread</i></p>
+      </div> 
+      <div class="home2">
+        <h2>The Sonrisa collection</h2>
+        <p>Welcome to The Sonrisa Collection - where style meets comfort!</p>
+      </div>
+    </div>
+  </section>
+    
+  <section class="shop" id="categories">
+    <section id="Shop" class="menu">
+      <a href="shirts.html">Shirt</a>
+      <a href="jeans.html">Jeans</a>
+      <a href="heels.html">Heels</a>
+      <a href="lehenga.html">Lehenga</a>
+      <a href="long coat.html">Long Coats</a>
+      <a href="blazers.html">Blazers</a>
+      <a href="skirts.html">Skirts</a>
+      <a href="dressfile.html">Dresses</a>
+      <a href="tops.html">Tops</a>
+      <a href="purse.html">Purse</a>
+    </section>
+
+    <div class="con">
+      <div class="category">
+        <a href="shirts.html"><img src="https://sc04.alicdn.com/kf/Hb48b5a37486b48619ca3b3a15d5f94d9o.jpg" alt="Shirts Collection"></a>
+        <h3>Shirts</h3>
+      </div>
+      <div class="category">
+        <a href="dressfile.html"><img src="https://i.pinimg.com/736x/c8/60/e0/c860e061e93ab91c056bcaab9b7f72be.jpg" alt="Dresses Collection"></a>
+        <h3>Dresses</h3>
+      </div>
+      <div class="category">
+        <a href="tops.html"><img src="https://i.pinimg.com/736x/ce/4e/16/ce4e167f4f0caa5eeba338883df345ff.jpg" alt="Top's Collection"></a>
+        <h3>Tops</h3>
+      </div>
+      <div class="category">
+        <a href="lehenga.html"><img src="https://i.pinimg.com/736x/49/89/0d/49890d0f11f12dff6d90b20dd7b01d49.jpg" alt="Indian wear"></a>
+        <h3>Indian wear</h3>
+      </div>
+      <div class="category">
+        <a href="heels.html"><img src="https://i.pinimg.com/736x/b8/c0/2d/b8c02de24848e9a708e2b4f321a451c0.jpg" alt="Heels"></a>  
+        <h3>Heels</h3>
+      </div> 
+      <div class="category">
+        <a href="jeans.html"><img src="https://i.pinimg.com/736x/ca/10/2c/ca102c3987b415b4a7915a6cb447fed4.jpg" alt="Jeans collection"></a>
+        <h3>Jeans</h3>
+      </div>
+      <div class="category">
+        <a href="blazers.html"><img src="https://i.pinimg.com/736x/5f/60/0d/5f600d33857718adf74db10eca40110b.jpg" alt="Blazers collection"></a>
+        <h3>Blazers</h3>
+      </div>
+      <div class="category">
+        <a href="sweater.html"><img src="https://i.pinimg.com/736x/9c/63/ac/9c63ac4c39e77dab0b8a968c68c71a8e.jpg" alt="Sweaters collection"></a>
+        <h3>Sweaters</h3>
+      </div>
+      <div class="category">
+        <a href="long coat.html"><img src="https://i.pinimg.com/736x/77/9a/ee/779aeeeb6dc6cf80e39d95c3663ccaac.jpg" alt="Coats"></a>
+        <h3>Long Coats</h3>
+      </div>
+      <div class="category">
+        <a href="purse.html"><img src="https://i.pinimg.com/736x/9f/77/4a/9f774a1cbb0f0d4912d3b15aa950a23f.jpg" alt="Purses"></a>
+        <h3>Purse</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <b>&copy; 2025 The Sonrisa Collection. Made with love &amp; fashion 💖</b>
+  </footer>
+</body>
+</html>
